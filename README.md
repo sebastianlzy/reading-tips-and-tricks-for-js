@@ -3,7 +3,9 @@ A collection of tips and tricks for JS development
 
 ### Patterns
 #### Module Pattern
+
 [https://addyosmani.com/largescalejavascript/](https://addyosmani.com/largescalejavascript/)
+
 The module pattern is a popular design that pattern that encapsulates 'privacy', state and organization using closures. It provides a way of wrapping a mix of public and private methods and variables, protecting pieces from leaking into the global scope and accidentally colliding with another developer's interface. With this pattern, only a public API is returned, keeping everything else within the closure private.
 
 ```
@@ -28,7 +30,9 @@ var basketModule = (function() {
 ```
 
 #### The Facade Pattern
+
 [https://addyosmani.com/largescalejavascript/](https://addyosmani.com/largescalejavascript/)
+
 The reason the facade is of interest is because of its ability to hide implementation-specific details about a body of functionality contained in individual modules. The implementation of a module can change without the clients really even knowing about it.
 
 ```
@@ -64,6 +68,7 @@ var module = (function() {
 The core difference between the facade pattern and the mediator is that the facade (a structural pattern) only exposes existing functionality whilst the mediator (a behavioral pattern) can add functionality.
 
 #### The Mediator Pattern
+
 [https://addyosmani.com/largescalejavascript/](https://addyosmani.com/largescalejavascript/)
 
 Mediators are used when the communication between modules may be complex, but is still well defined. If it appears a system may have too many relationships between modules in your code, it may be time to have a central point of control, which is where the pattern fits in.
